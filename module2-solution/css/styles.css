@@ -3,11 +3,16 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	 
+}
+
+body {
 	font-size: 20px;
-	font-family: Helvetica; 
+	font-family: Helvetica;
 }
 
 h1 {
+	margin-top: 10px;
 	margin-bottom: 15px;
 	text-align: center;
 	font-size: 1.75em
@@ -23,12 +28,20 @@ h2 {
 	margin-bottom: 5px;
 }
 
-p {
-  border: 1px solid black;
-  margin-right: auto;
-  margin-left: auto;   
+p {  
+  padding-right: auto;
+  padding-left: 15px;
+  padding-bottom: 5px;   
   color: black;
   clear: right;
+}
+
+.section {
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	background-color: #D3D3D3;
+	border: 1px solid black; 
 }
 
 /* Simple Responsive Framework. */
@@ -39,11 +52,7 @@ p {
 /********** Desktop version **********/
 @media (min-width: 992px) {
 	
-	.col-dk-1, .col-dk-2, .col-dk-3, .col-dk-4, .col-dk-5, .col-dk-6, .col-dk-7, .col-dk-8, .col-dk-9, .col-dk-10, .col-dk-11, .col-dk-12 {		
-		
-		background-color: #D3D3D3;
-		border: 1px solid black;				
-		position: relative;
+	.col-dk-1, .col-dk-2, .col-dk-3, .col-dk-4, .col-dk-5, .col-dk-6, .col-dk-7, .col-dk-8, .col-dk-9, .col-dk-10, .col-dk-11, .col-dk-12 {												
 		float: left;
 	}
 	
@@ -88,12 +97,8 @@ p {
 /********** Tablet version **********/
 @media (min-width: 768px) and (max-width: 991px) {
 	
-	.col-tb-1, .col-tb-2, .col-tb-3, .col-tb-4, .col-tb-5, .col-tb-6, .col-tb-7, .col-tb-8, .col-tb-9, .col-tb-10, .col-tb-11, .col-tb-12 {
-		position: relative;
-		float: left;
-		background-color: #D3D3D3;
-		border: 1px solid black;
-		margin-left: 20px;
+	.col-tb-1, .col-tb-2, .col-tb-3, .col-tb-4, .col-tb-5, .col-tb-6, .col-tb-7, .col-tb-8, .col-tb-9, .col-tb-10, .col-tb-11, .col-tb-12 {		
+		float: left;		
 	}
 	
 	.col-tb-1 {
@@ -138,11 +143,6 @@ p {
 		
 	.col-mb-1, .col-mb-2, .col-mb-3, .col-mb-4, .col-mb-5, .col-mb-6, .col-mb-7, .col-mb-8, .col-mb-9, .col-mb-10, .col-mb-11, .col-mb-12 {		
 		float: left;
-		background-color: #D3D3D3;
-		border: 1px solid black;
-		margin-left: 40px;
-		margin-right: 40px;
-		margin-bottom: 10px;
 	}
 	
 	.col-mb-1 {
