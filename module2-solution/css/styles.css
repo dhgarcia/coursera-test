@@ -1,20 +1,36 @@
 /********** Base styles **********/
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	font-family: Helvetica; 
 }
+
 h1 {
-  margin-bottom: 15px;
+	margin-bottom: 15px;
+	text-align: center;
+	font-size: 1.75em
 }
+
+h2 {
+	position: relative;
+	text-align: center;
+	padding: 5px 15px 5px 15px;
+	float: right;
+	font-size: 1.25em;
+	border: 1px solid black;
+	margin-bottom: 5px;
+}
+
 p {
   border: 1px solid black;
-  background-color: #A52A2A;
-  width: 90%;
-  height: 150px;
   margin-right: auto;
-  margin-left: auto;
-  font-family: Helvetica;
-  color: white;
+  margin-left: auto;   
+  color: black;
+  clear: right;
 }
+
 /* Simple Responsive Framework. */
 .row {
   width: 100%;
@@ -23,9 +39,12 @@ p {
 /********** Desktop version **********/
 @media (min-width: 992px) {
 	
-	.col-dk-1, .col-dk-2, .col-dk-3, .col-dk-4, .col-dk-5, .col-dk-6, .col-dk-7, .col-dk-8, .col-dk-9, .col-dk-10, .col-dk-11, .col-dk-12 {
+	.col-dk-1, .col-dk-2, .col-dk-3, .col-dk-4, .col-dk-5, .col-dk-6, .col-dk-7, .col-dk-8, .col-dk-9, .col-dk-10, .col-dk-11, .col-dk-12 {		
+		
+		background-color: #D3D3D3;
+		border: 1px solid black;				
+		position: relative;
 		float: left;
-		border: 1px solid black
 	}
 	
 	.col-dk-1 {
@@ -69,11 +88,113 @@ p {
 /********** Tablet version **********/
 @media (min-width: 768px) and (max-width: 991px) {
 	
+	.col-tb-1, .col-tb-2, .col-tb-3, .col-tb-4, .col-tb-5, .col-tb-6, .col-tb-7, .col-tb-8, .col-tb-9, .col-tb-10, .col-tb-11, .col-tb-12 {
+		position: relative;
+		float: left;
+		background-color: #D3D3D3;
+		border: 1px solid black;
+		margin-left: 20px;
+	}
+	
+	.col-tb-1 {
+		width: 8.33%;
+	}
+	.col-tb-2 {
+		width: 16.66%;
+	}
+	.col-tb-3 {
+		width: 25%;
+	}
+	.col-tb-4 {
+		width: 33.33%;
+	}
+	.col-tb-5 {
+		width: 41.66%;
+	}
+	.col-tb-6 {
+		width: 50%;
+	}
+	.col-tb-7 {
+		width: 58.33%;
+	}
+	.col-tb-8 {
+		width: 66.66%;
+	}
+	.col-tb-9 {
+		width: 74.99%;
+	}
+	.col-tb-10 {
+		width: 83.33%;
+	}
+	.col-tb-11 {
+		width: 91.66%;
+	}
+	.col-tb-12 {
+		width: 100%;
+	}	
 }
 
 @media (max-width: 767px) {
+		
+	.col-mb-1, .col-mb-2, .col-mb-3, .col-mb-4, .col-mb-5, .col-mb-6, .col-mb-7, .col-mb-8, .col-mb-9, .col-mb-10, .col-mb-11, .col-mb-12 {		
+		float: left;
+		background-color: #D3D3D3;
+		border: 1px solid black;
+		margin-left: 40px;
+		margin-right: 40px;
+		margin-bottom: 10px;
+	}
 	
+	.col-mb-1 {
+		width: 8.33%;
+	}
+	.col-mb-2 {
+		width: 16.66%;
+	}
+	.col-mb-3 {
+		width: 25%;
+	}
+	.col-mb-4 {
+		width: 33.33%;
+	}
+	.col-mb-5 {
+		width: 41.66%;
+	}
+	.col-mb-6 {
+		width: 50%;
+	}
+	.col-mb-7 {
+		width: 58.33%;
+	}
+	.col-mb-8 {
+		width: 66.66%;
+	}
+	.col-mb-9 {
+		width: 74.99%;
+	}
+	.col-mb-10 {
+		width: 83.33%;
+	}
+	.col-mb-11 {
+		width: 91.66%;
+	}
+	.col-mb-12 {
+		width: 100%;
+	}
 }
 
 
 
+/********** Title Region styles **********/
+
+#tr1 {
+	background-color: #CC9900;
+}
+
+#tr2 {
+	background-color: #CC9966;
+}
+
+#tr3 {
+	background-color: #CC99CC;
+}
