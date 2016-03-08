@@ -26,6 +26,7 @@ body {
   text-shadow: 1px 1px 1px #222;
   margin-top: 0;
   margin-bottom: 0;
+  padding-bottom: 5px;
   line-height: .75;
 }
 .navbar-brand a:hover, .navbar-brand a:focus {
@@ -52,7 +53,7 @@ body {
 }
 .navbar-header button.navbar-toggle {
   clear: both;
-  margin-top: -30px;
+  margin-top: -40px;
 }
 
 
